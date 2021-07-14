@@ -1,8 +1,8 @@
 
 var body = document.getElementById('body');
-body.style.cssText = "margin-left:550px ; margin-top:50px;";
+body.style.cssText = "margin-left:475px ; margin-top:50px; margin-right:500px";
 var tictac = document.getElementById('game');
-tictac.style.cssText = "font-family:Arial;";
+tictac.style.cssText = "margin-right:50px;padding-left:20px;padding-bottom:10px;border-radius:10px;font-size:30px;font-family:Arial;color:#c0e2e2;background-color:#4c0409; padding-top:10px";
 
 var button = [];
 var but = ['but1','but2','but3','but4','but5','but6','but7','but8','but9'];
@@ -37,208 +37,187 @@ var butNine = document.getElementById('but9');
       butOne.addEventListener("click", function set() {
         if(butOne.innerHTML == ''  && playerOne == 1){
           butOne.innerHTML = 'X'; 
-          var but_1 = butOne.innerHTML;
-          console.log(but_1);
-         // check_winner();
+          check_winner();
           playerOne = 0;  
         }
-        check_winner();
       });
      butTwo.addEventListener("click", function set() {
       if(butTwo.innerHTML == '' && playerOne == 1){
         butTwo.innerHTML = 'X';
-        var but_2 = butTwo.innerHTML;
+        check_winner();
         playerOne = 0;
       }
-      check_winner();
     });
     butThree.addEventListener("click", function set() {
       if(butThree.innerHTML == '' && playerOne == 1){
         butThree.innerHTML = 'X';
-        var but_3 = butThree.innerHTML;
+        check_winner();
         playerOne = 0;
       }
-      check_winner();
     });
     butFour.addEventListener("click", function set() {
       if(butFour.innerHTML == '' && playerOne == 1){
         butFour.innerHTML = 'X';
-        var but_4 = butFour.innerHTML;
+        check_winner();
         playerOne = 0;
-      }
-      check_winner();
+      } 
     });
     butFive.addEventListener("click", function set() {
       if(butFive.innerHTML == '' && playerOne == 1){
         butFive.innerHTML = 'X';
-        var but_5 = butFive.innerHTML;
+        check_winner();
         playerOne = 0;
       }
-      check_winner();
     });
     butSix.addEventListener("click", function set() {
       if(butSix.innerHTML == '' && playerOne == 1){
         butSix.innerHTML = 'X';
-        var but_6 = butSix.innerHTML;
+        check_winner();
         playerOne = 0;
       }
-      check_winner();
     });
     butSeven.addEventListener("click", function set() {
       if(butSeven.innerHTML == '' && playerOne == 1){
         butSeven.innerHTML = 'X';
-        var but_7 = butSeven.innerHTML;
+        check_winner();
         playerOne = 0;
       }
-      check_winner();
     });
     butEight.addEventListener("click", function set() {
       if(butEight.innerHTML == '' && playerOne == 1){
         butEight.innerHTML = 'X';
-        var but_8 = butEight.innerHTML;
+        check_winner();
         playerOne = 0;
       }
-      check_winner();
     });
     butNine.addEventListener("click", function set() {
       if(butNine.innerHTML == '' && playerOne == 1){
         butNine.innerHTML = 'X';
-        var but_9 = butNine.innerHTML;
+        check_winner();
         playerOne = 0;
       }
-     check_winner();
-    });   
+    });  
     function check_winner(){
-      if(butOne.innerHTML == butTwo.innerHTML && butTwo.innerHTML == butThree.innerHTML){
-        alert("You are a Winner");
-      } 
-      /*
-      else if(butOne.innerHTML == butFour.innerHTML && butFour.innerHTML == butSeven.innerHTML){
-        alert("You are a Winner");
-      }
-      else if(butOne.innerHTML == butFive.innerHTML && butFive.innerHTML == butNine.innerHTML){
-        alert("You are a Winner");
-      }
-      else if(butTwo.innerHTML == butFive.innerHTML && butFive.innerHTML == butEight.innerHTML){
-        alert("You are a Winner");
-      }
-      else if(butThree.innerHTML == butFive.innerHTML && butFive.innerHTML == butSeven.innerHTML){
-        alert("You are a Winner");
-      }
-      else if(butThree.innerHTML == butSix.innerHTML && butSix.innerHTML == butNine.innerHTML){
-        alert("You are a Winner");
-      }
-      else if(butFour.innerHTML == butFive.innerHTML && butFive.innerHTML == butSix.innerHTML){
-        alert("You are a Winner");
-      }
-      else if(butSeven.innerHTML == butEight.innerHTML && butEight.innerHTML == butNine.innerHTML){
-        alert("You are a Winner");
-      }
-      else{
-        alert("Game Draw");
-      } */
+          if(butOne.innerHTML === "X" && butTwo.innerHTML === "X"  && butThree.innerHTML === "X"){
+            alert("X is a Winner");
+          } 
+          else if(butOne.innerHTML === "X" && butFour.innerHTML === "X" && butSeven.innerHTML === "X"){
+            alert("X is a Winner");
+          }
+          else if(butOne.innerHTML === "X" && butFive.innerHTML === "X" && butNine.innerHTML === "X"){
+            alert("X is a Winner");
+          }
+          else if(butTwo.innerHTML === "X" && butFive.innerHTML === "X" && butEight.innerHTML === "X"){
+            alert("X is a Winner");
+          }
+          else if(butThree.innerHTML === "X" && butFive.innerHTML === "X" && butSeven.innerHTML === "X"){
+            alert("X is a Winner");
+          }
+          else if(butThree.innerHTML === "X" && butSix.innerHTML === "X" && butNine.innerHTML === "X"){
+            alert("X is a Winner");
+          }
+          else if(butFour.innerHTML === "X" && butFive.innerHTML === "X" && butSix.innerHTML === "X"){
+            alert("X is a Winner");
+          }
+          else if(butSeven.innerHTML === "X" && butEight.innerHTML === "X" && butNine.innerHTML === "X"){
+            alert("X is a Winner");
+          }  
      }
    }
-   
-   
+
    function playerTwo()
    {
     var playerTwo = 0;
     butOne.addEventListener("click", function set() {
         if(butOne.innerHTML == ''  && playerTwo == 0){
           butOne.innerHTML = 'O';
+          check_winner();
           playerTwo = 1;
         }
-       // check_winner();
       });
     butTwo.addEventListener("click", function set() {
       if(butTwo.innerHTML == '' && playerTwo == 0){
         butTwo.innerHTML = 'O';
+        check_winner();
         playerTwo = 1;
       }
-     // check_winner();
     });
     butThree.addEventListener("click", function set() {
       if(butThree.innerHTML == '' && playerTwo == 0){
         butThree.innerHTML = 'O';
+        check_winner();
         playerTwo = 1;
       }
-    //  check_winner();
     });
     butFour.addEventListener("click", function set() {
       if(butFour.innerHTML == '' && playerTwo == 0){
         butFour.innerHTML = 'O';
+        check_winner();
         playerTwo = 1;
       }
-    //  check_winner();
     });
     butFive.addEventListener("click", function set() {
       if(butFive.innerHTML == '' && playerTwo == 0){
         butFive.innerHTML = 'O';
+        check_winner();
         playerTwo = 1;
       }
-     // check_winner();
     });
     butSix.addEventListener("click", function set() {
       if(butSix.innerHTML == '' && playerTwo == 0){
         butSix.innerHTML = 'O';
+        check_winner();
         playerTwo = 1;
       }
-    //  check_winner();
     });
     butSeven.addEventListener("click", function set() {
       if(butSeven.innerHTML == '' && playerTwo == 0){
         butSeven.innerHTML = 'O';
+        check_winner();
         playerTwo = 1;
       }
-    //  check_winner();
     });
     butEight.addEventListener("click", function set() {
       if(butEight.innerHTML == '' && playerTwo == 0){
         butEight.innerHTML = 'O';
+        check_winner();
         playerTwo = 1;
       }
-    //  check_winner();
     });
     butNine.addEventListener("click", function set() {
       if(butNine.innerHTML == '' && playerTwo == 0){
         butNine.innerHTML = 'O';
+        check_winner();
         playerTwo = 1;
       }
-    //  check_winner();
     }); 
-    /*
-    function check_winner(){
-      if(butOne.innerHTML == butTwo.innerHTML && butTwo.innerHTML == butThree.innerHTML){
-        alert("You are a Winner");
-      } 
-      else if(butOne.innerHTML == butFour.innerHTML && butFour.innerHTML == butSeven.innerHTML){
-        alert("You are a Winner");
-      }
-      else if(butOne.innerHTML == butFive.innerHTML && butFive.innerHTML == butNine.innerHTML){
-        alert("You are a Winner");
-      }
-      else if(butTwo.innerHTML == butFive.innerHTML && butFive.innerHTML == butEight.innerHTML){
-        alert("You are a Winner");
-      }
-      else if(butThree.innerHTML == butFive.innerHTML && butFive.innerHTML == butSeven.innerHTML){
-        alert("You are a Winner");
-      }
-      else if(butThree.innerHTML == butSix.innerHTML && butSix.innerHTML == butNine.innerHTML){
-        alert("You are a Winner");
-      }
-      else if(butFour.innerHTML == butFive.innerHTML && butFive.innerHTML == butSix.innerHTML){
-        alert("You are a Winner");
-      }
-      else if(butSeven.innerHTML == butEight.innerHTML && butEight.innerHTML == butNine.innerHTML){
-        alert("You are a Winner");
-      }
-      else{
-        alert("Game Draw");
-      }
-     } */
+    function check_winner(){  
+          if(butOne.innerHTML === "O" && butTwo.innerHTML === "O"  && butThree.innerHTML === "O"){
+            alert("O is a Winner");
+          } 
+          else if(butOne.innerHTML === "O" && butFour.innerHTML === "O" && butSeven.innerHTML === "O"){
+            alert("O is a Winner");
+          }
+          else if(butOne.innerHTML === "O" && butFive.innerHTML === "O" && butNine.innerHTML === "O"){
+            alert("O is a Winner");
+          }
+          else if(butTwo.innerHTML === "O" && butFive.innerHTML === "O" && butEight.innerHTML === "O"){
+            alert("O is a Winner");
+          }
+          else if(butThree.innerHTML === "O" && butFive.innerHTML === "O" && butSeven.innerHTML === "O"){
+            alert("O is a Winner");
+          }
+          else if(butThree.innerHTML === "O" && butSix.innerHTML === "O" && butNine.innerHTML === "O"){
+            alert("O is a Winner");
+          }
+          else if(butFour.innerHTML === "O" && butFive.innerHTML === "O" && butSix.innerHTML === "O"){
+            alert("O is a Winner");
+          }
+          else if(butSeven.innerHTML === "O" && butEight.innerHTML === "O" && butNine.innerHTML === "O"){
+            alert("O is a Winner");
+          }   
+     }
    }
-
    var player = 'X';
    function player_turn(){
      for(var i=0;i<9;i++)
@@ -252,10 +231,11 @@ var butNine = document.getElementById('but9');
          playerTwo();
          player = 'X';
        }
-     }   
+     }
+        
    }
    player_turn();
- 
+   
    
 
    
