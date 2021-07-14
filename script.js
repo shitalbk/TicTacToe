@@ -21,143 +21,224 @@ for(var i=0;i<9;i++)
   if(i==2 || i==5)
   document.write("<br/>");
 }
-  
+var butOne = document.getElementById('but1');
+var butTwo = document.getElementById('but2');
+var butThree = document.getElementById('but3');
+var butFour = document.getElementById('but4');
+var butFive = document.getElementById('but5');
+var butSix = document.getElementById('but6');
+var butSeven = document.getElementById('but7');
+var butEight = document.getElementById('but8');
+var butNine = document.getElementById('but9');
+
    function playerOne()
    {
     var playerOne = 1;
-      var butOne = document.getElementById('but1');
       butOne.addEventListener("click", function set() {
         if(butOne.innerHTML == ''  && playerOne == 1){
           butOne.innerHTML = 'X'; 
-          playerOne = 0;
+          var but_1 = butOne.innerHTML;
+          console.log(but_1);
+         // check_winner();
+          playerOne = 0;  
         }
+        check_winner();
       });
-    var butTwo = document.getElementById('but2');
-    butTwo.addEventListener("click", function set() {
+     butTwo.addEventListener("click", function set() {
       if(butTwo.innerHTML == '' && playerOne == 1){
         butTwo.innerHTML = 'X';
+        var but_2 = butTwo.innerHTML;
         playerOne = 0;
       }
+      check_winner();
     });
-    var butThree = document.getElementById('but3');
     butThree.addEventListener("click", function set() {
       if(butThree.innerHTML == '' && playerOne == 1){
         butThree.innerHTML = 'X';
+        var but_3 = butThree.innerHTML;
         playerOne = 0;
       }
+      check_winner();
     });
-    var butFour = document.getElementById('but4');
     butFour.addEventListener("click", function set() {
       if(butFour.innerHTML == '' && playerOne == 1){
         butFour.innerHTML = 'X';
+        var but_4 = butFour.innerHTML;
         playerOne = 0;
       }
+      check_winner();
     });
-    var butFive = document.getElementById('but5');
     butFive.addEventListener("click", function set() {
       if(butFive.innerHTML == '' && playerOne == 1){
         butFive.innerHTML = 'X';
+        var but_5 = butFive.innerHTML;
         playerOne = 0;
       }
+      check_winner();
     });
-    var butSix = document.getElementById('but6');
     butSix.addEventListener("click", function set() {
       if(butSix.innerHTML == '' && playerOne == 1){
         butSix.innerHTML = 'X';
+        var but_6 = butSix.innerHTML;
         playerOne = 0;
       }
+      check_winner();
     });
-    var butSeven = document.getElementById('but7');
     butSeven.addEventListener("click", function set() {
       if(butSeven.innerHTML == '' && playerOne == 1){
         butSeven.innerHTML = 'X';
+        var but_7 = butSeven.innerHTML;
         playerOne = 0;
       }
+      check_winner();
     });
-    var butEight = document.getElementById('but8');
     butEight.addEventListener("click", function set() {
       if(butEight.innerHTML == '' && playerOne == 1){
         butEight.innerHTML = 'X';
+        var but_8 = butEight.innerHTML;
         playerOne = 0;
       }
+      check_winner();
     });
-    var butNine = document.getElementById('but9');
     butNine.addEventListener("click", function set() {
       if(butNine.innerHTML == '' && playerOne == 1){
         butNine.innerHTML = 'X';
+        var but_9 = butNine.innerHTML;
         playerOne = 0;
       }
-    }); 
+     check_winner();
+    });   
+    function check_winner(){
+      if(butOne.innerHTML == butTwo.innerHTML && butTwo.innerHTML == butThree.innerHTML){
+        alert("You are a Winner");
+      } 
+      /*
+      else if(butOne.innerHTML == butFour.innerHTML && butFour.innerHTML == butSeven.innerHTML){
+        alert("You are a Winner");
+      }
+      else if(butOne.innerHTML == butFive.innerHTML && butFive.innerHTML == butNine.innerHTML){
+        alert("You are a Winner");
+      }
+      else if(butTwo.innerHTML == butFive.innerHTML && butFive.innerHTML == butEight.innerHTML){
+        alert("You are a Winner");
+      }
+      else if(butThree.innerHTML == butFive.innerHTML && butFive.innerHTML == butSeven.innerHTML){
+        alert("You are a Winner");
+      }
+      else if(butThree.innerHTML == butSix.innerHTML && butSix.innerHTML == butNine.innerHTML){
+        alert("You are a Winner");
+      }
+      else if(butFour.innerHTML == butFive.innerHTML && butFive.innerHTML == butSix.innerHTML){
+        alert("You are a Winner");
+      }
+      else if(butSeven.innerHTML == butEight.innerHTML && butEight.innerHTML == butNine.innerHTML){
+        alert("You are a Winner");
+      }
+      else{
+        alert("Game Draw");
+      } */
+     }
    }
-
+   
+   
    function playerTwo()
    {
     var playerTwo = 0;
-      var butOne1 = document.getElementById('but1');
-      butOne1.addEventListener("click", function set() {
-        if(butOne1.innerHTML == ''  && playerTwo == 0){
-          butOne1.innerHTML = 'O'; 
+    butOne.addEventListener("click", function set() {
+        if(butOne.innerHTML == ''  && playerTwo == 0){
+          butOne.innerHTML = 'O';
           playerTwo = 1;
         }
+       // check_winner();
       });
-    var butTwo2 = document.getElementById('but2');
-    butTwo2.addEventListener("click", function set() {
-      if(butTwo2.innerHTML == '' && playerTwo == 0){
-        butTwo2.innerHTML = 'O';
+    butTwo.addEventListener("click", function set() {
+      if(butTwo.innerHTML == '' && playerTwo == 0){
+        butTwo.innerHTML = 'O';
         playerTwo = 1;
       }
+     // check_winner();
     });
-    var butThree3 = document.getElementById('but3');
-    butThree3.addEventListener("click", function set() {
-      if(butThree3.innerHTML == '' && playerTwo == 0){
-        butThree3.innerHTML = 'O';
+    butThree.addEventListener("click", function set() {
+      if(butThree.innerHTML == '' && playerTwo == 0){
+        butThree.innerHTML = 'O';
         playerTwo = 1;
       }
+    //  check_winner();
     });
-    var butFour4 = document.getElementById('but4');
-    butFour4.addEventListener("click", function set() {
-      if(butFour4.innerHTML == '' && playerTwo == 0){
-        butFour4.innerHTML = 'O';
+    butFour.addEventListener("click", function set() {
+      if(butFour.innerHTML == '' && playerTwo == 0){
+        butFour.innerHTML = 'O';
         playerTwo = 1;
       }
+    //  check_winner();
     });
-    var butFive5 = document.getElementById('but5');
-    butFive5.addEventListener("click", function set() {
-      if(butFive5.innerHTML == '' && playerTwo == 0){
-        butFive5.innerHTML = 'O';
+    butFive.addEventListener("click", function set() {
+      if(butFive.innerHTML == '' && playerTwo == 0){
+        butFive.innerHTML = 'O';
         playerTwo = 1;
       }
+     // check_winner();
     });
-    var butSix6 = document.getElementById('but6');
-    butSix6.addEventListener("click", function set() {
-      if(butSix6.innerHTML == '' && playerTwo == 0){
-        butSix6.innerHTML = 'O';
+    butSix.addEventListener("click", function set() {
+      if(butSix.innerHTML == '' && playerTwo == 0){
+        butSix.innerHTML = 'O';
         playerTwo = 1;
       }
+    //  check_winner();
     });
-    var butSeven7 = document.getElementById('but7');
-    butSeven7.addEventListener("click", function set() {
-      if(butSeven7.innerHTML == '' && playerTwo == 0){
-        butSeven7.innerHTML = 'O';
+    butSeven.addEventListener("click", function set() {
+      if(butSeven.innerHTML == '' && playerTwo == 0){
+        butSeven.innerHTML = 'O';
         playerTwo = 1;
       }
+    //  check_winner();
     });
-    var butEight8= document.getElementById('but8');
-    butEight8.addEventListener("click", function set() {
-      if(butEight8.innerHTML == '' && playerTwo == 0){
-        butEight8.innerHTML = 'O';
+    butEight.addEventListener("click", function set() {
+      if(butEight.innerHTML == '' && playerTwo == 0){
+        butEight.innerHTML = 'O';
         playerTwo = 1;
       }
+    //  check_winner();
     });
-    var butNine9 = document.getElementById('but9');
-    butNine9.addEventListener("click", function set() {
-      if(butNine9.innerHTML == '' && playerTwo == 0){
-        butNine9.innerHTML = 'O';
+    butNine.addEventListener("click", function set() {
+      if(butNine.innerHTML == '' && playerTwo == 0){
+        butNine.innerHTML = 'O';
         playerTwo = 1;
       }
+    //  check_winner();
     }); 
+    /*
+    function check_winner(){
+      if(butOne.innerHTML == butTwo.innerHTML && butTwo.innerHTML == butThree.innerHTML){
+        alert("You are a Winner");
+      } 
+      else if(butOne.innerHTML == butFour.innerHTML && butFour.innerHTML == butSeven.innerHTML){
+        alert("You are a Winner");
+      }
+      else if(butOne.innerHTML == butFive.innerHTML && butFive.innerHTML == butNine.innerHTML){
+        alert("You are a Winner");
+      }
+      else if(butTwo.innerHTML == butFive.innerHTML && butFive.innerHTML == butEight.innerHTML){
+        alert("You are a Winner");
+      }
+      else if(butThree.innerHTML == butFive.innerHTML && butFive.innerHTML == butSeven.innerHTML){
+        alert("You are a Winner");
+      }
+      else if(butThree.innerHTML == butSix.innerHTML && butSix.innerHTML == butNine.innerHTML){
+        alert("You are a Winner");
+      }
+      else if(butFour.innerHTML == butFive.innerHTML && butFive.innerHTML == butSix.innerHTML){
+        alert("You are a Winner");
+      }
+      else if(butSeven.innerHTML == butEight.innerHTML && butEight.innerHTML == butNine.innerHTML){
+        alert("You are a Winner");
+      }
+      else{
+        alert("Game Draw");
+      }
+     } */
    }
-  
+
    var player = 'X';
    function player_turn(){
      for(var i=0;i<9;i++)
@@ -171,13 +252,14 @@ for(var i=0;i<9;i++)
          playerTwo();
          player = 'X';
        }
-     }
+     }   
    }
    player_turn();
+ 
+   
 
-   function check_winner(){
-
-   }
+   
+   
    
   
  
