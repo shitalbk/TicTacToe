@@ -1,7 +1,7 @@
 # TIC TAC TOE GAME
 The game is created using JavaScript and is tested and compatible in the browsers including Chrome, Safari, Microsoft Edge and Mozilla Firefox.
 Tic Tac Toe is a two player game and can be played by any age group.
-The demo of the game played is shown below in Chrome and Safari browsers:
+The demo of the game played is shown below in Chrome, Safari and Microsoft Edge browsers:
 
 Demo of the game played by two users in Chrome. Player 'O' wins the game.
 
